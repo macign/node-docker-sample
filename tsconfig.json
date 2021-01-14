@@ -5,9 +5,11 @@
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
+    "allowJs": false,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"]
 }

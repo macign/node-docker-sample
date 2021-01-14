@@ -28,13 +28,15 @@ export function searchCountry(countries: ICountry[], search: string) {
     state = stateName;
   }
 
-  return countries.filter((country) => {
-    if (country.state.toLowerCase() === state) {
-      return true;
-    }
+  return countries
+    .filter((country) => {
+      if (country.state.toLowerCase() === state) {
+        return true;
+      }
 
-    if (state.length > 2) {
-      return country.name.toLowerCase().match(namePattern);
-    }
-  });
+      if (state.length > 2) {
+        return country.name.toLowerCase().match(namePattern);
+      }
+    })
+    .slice(0, 5);
 }
