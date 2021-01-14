@@ -1,0 +1,6 @@
+# LOCAL
+INSTRUCTIONS.MD
+spec.yaml
+
+node_modules
+dist
