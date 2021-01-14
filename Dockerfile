@@ -1,5 +1,7 @@
 FROM node:15
 
+WORKDIR D:\\APPLICATION\\propelio\\test
+
 COPY package*.json ./
 
 RUN npm i
@@ -12,4 +14,4 @@ WORKDIR ./dist
 
 EXPOSE 3000
 
-CMD node index.js
+CMD ["npm", "start"]
